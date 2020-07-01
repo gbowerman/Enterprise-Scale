@@ -1,0 +1,39 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "SystemAssigned",
+          "principalId": "51f15086-3a3d-4c90-ad3a-87cf6b74f0e7",
+          "tenantId": "c70cf9bc-1d9f-4da8-a8b5-eb3c3cf5854d"
+        },
+        "Location": "westus2",
+        "Name": "Deploy-AzActivity-Log",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/GBES/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+        "ResourceName": "Deploy-AzActivity-Log",
+        "ResourceGroupName": null,
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "SubscriptionId": null,
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        },
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/GBES/providers/Microsoft.Authorization/policyAssignments/Deploy-AzActivity-Log",
+        "Properties": {
+          "Scope": "/providers/Microsoft.Management/managementGroups/GBES",
+          "NotScopes": null,
+          "DisplayName": "Deploy-AzActivity-Log",
+          "Description": "Deploy-AzActivity-Log",
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/GBES/providers/Microsoft.Authorization/policyDefinitions/Deploy-Diagnostics-ActivityLog",
+          "Parameters": {
+            "logAnalytics": {
+              "value": "/subscriptions/0ca43f32-3747-4177-861f-1268aa90bdde/resourcegroups/gbes-mgmt/providers/microsoft.operationalinsights/workspaces/gbes-la-0ca43f32-3747-4177-861f-1268aa90bdde"
+            }
+          }
+        }
+      }
+    }
+  }
+}

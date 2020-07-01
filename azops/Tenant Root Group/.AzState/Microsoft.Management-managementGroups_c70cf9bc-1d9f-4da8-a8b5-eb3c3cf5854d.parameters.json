@@ -1,0 +1,124 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/c70cf9bc-1d9f-4da8-a8b5-eb3c3cf5854d",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "c70cf9bc-1d9f-4da8-a8b5-eb3c3cf5854d",
+        "TenantId": "c70cf9bc-1d9f-4da8-a8b5-eb3c3cf5854d",
+        "DisplayName": "Tenant Root Group",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": null,
+        "ParentName": null,
+        "ParentDisplayName": null,
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/mg1",
+            "Name": "mg1",
+            "DisplayName": "mg1",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/GBES",
+            "Name": "GBES",
+            "DisplayName": "GBES",
+            "Children": [
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/GBES-decomissioned",
+                "Name": "GBES-decomissioned",
+                "DisplayName": "GBES-decomissioned",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/GBES-sandboxes",
+                "Name": "GBES-sandboxes",
+                "DisplayName": "GBES-sandboxes",
+                "Children": null
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/GBES-landingzones",
+                "Name": "GBES-landingzones",
+                "DisplayName": "GBES-Landing Zones",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/GBES-sap",
+                    "Name": "GBES-sap",
+                    "DisplayName": "GBES-sap",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/GBES-corp",
+                    "Name": "GBES-corp",
+                    "DisplayName": "GBES-corp",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/GBES-online",
+                    "Name": "GBES-online",
+                    "DisplayName": "GBES-online",
+                    "Children": null
+                  }
+                ]
+              },
+              {
+                "Type": "/providers/Microsoft.Management/managementGroups",
+                "Id": "/providers/Microsoft.Management/managementGroups/GBES-platform",
+                "Name": "GBES-platform",
+                "DisplayName": "GBES-platform",
+                "Children": [
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/GBES-management",
+                    "Name": "GBES-management",
+                    "DisplayName": "GBES-management",
+                    "Children": [
+                      {
+                        "Type": "/subscriptions",
+                        "Id": "/subscriptions/0ca43f32-3747-4177-861f-1268aa90bdde",
+                        "Name": "0ca43f32-3747-4177-861f-1268aa90bdde",
+                        "DisplayName": "guysm365sub",
+                        "Children": null
+                      }
+                    ]
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/GBES-connectivity",
+                    "Name": "GBES-connectivity",
+                    "DisplayName": "GBES-connectivity",
+                    "Children": null
+                  },
+                  {
+                    "Type": "/providers/Microsoft.Management/managementGroups",
+                    "Id": "/providers/Microsoft.Management/managementGroups/GBES-identity",
+                    "Name": "GBES-identity",
+                    "DisplayName": "GBES-identity",
+                    "Children": null
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}

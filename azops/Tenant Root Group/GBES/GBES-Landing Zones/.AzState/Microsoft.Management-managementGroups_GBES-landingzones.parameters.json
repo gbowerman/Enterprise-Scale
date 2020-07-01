@@ -1,0 +1,50 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Id": "/providers/Microsoft.Management/managementGroups/GBES-landingzones",
+        "Type": "/providers/Microsoft.Management/managementGroups",
+        "Name": "GBES-landingzones",
+        "TenantId": "c70cf9bc-1d9f-4da8-a8b5-eb3c3cf5854d",
+        "DisplayName": "GBES-Landing Zones",
+        "UpdatedTime": "0001-01-01T00:00:00Z",
+        "UpdatedBy": null,
+        "ParentId": "/providers/Microsoft.Management/managementGroups/GBES",
+        "ParentName": "GBES",
+        "ParentDisplayName": "GBES",
+        "Children": [
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/GBES-sap",
+            "Name": "GBES-sap",
+            "DisplayName": "GBES-sap",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/GBES-corp",
+            "Name": "GBES-corp",
+            "DisplayName": "GBES-corp",
+            "Children": null
+          },
+          {
+            "Type": "/providers/Microsoft.Management/managementGroups",
+            "Id": "/providers/Microsoft.Management/managementGroups/GBES-online",
+            "Name": "GBES-online",
+            "DisplayName": "GBES-online",
+            "Children": null
+          }
+        ],
+        "properties": {
+          "policyDefinitions": [],
+          "policySetDefinitions": [],
+          "policyAssignments": [],
+          "roleDefinitions": null,
+          "roleAssignments": null
+        }
+      }
+    }
+  }
+}

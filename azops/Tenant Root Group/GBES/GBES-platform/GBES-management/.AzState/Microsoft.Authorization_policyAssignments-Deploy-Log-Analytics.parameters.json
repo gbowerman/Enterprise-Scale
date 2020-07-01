@@ -1,0 +1,51 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "input": {
+      "value": {
+        "Identity": {
+          "type": "SystemAssigned",
+          "principalId": "71ac57c8-d9a7-4995-b0d5-3acc9a202bb1",
+          "tenantId": "c70cf9bc-1d9f-4da8-a8b5-eb3c3cf5854d"
+        },
+        "Location": "westus2",
+        "Name": "Deploy-Log-Analytics",
+        "ResourceId": "/providers/Microsoft.Management/managementGroups/GBES-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "ResourceName": "Deploy-Log-Analytics",
+        "ResourceGroupName": null,
+        "ResourceType": "Microsoft.Authorization/policyAssignments",
+        "SubscriptionId": null,
+        "Sku": {
+          "name": "A0",
+          "tier": "Free"
+        },
+        "PolicyAssignmentId": "/providers/Microsoft.Management/managementGroups/GBES-management/providers/Microsoft.Authorization/policyAssignments/Deploy-Log-Analytics",
+        "Properties": {
+          "Scope": "/providers/Microsoft.Management/managementGroups/GBES-management",
+          "NotScopes": null,
+          "DisplayName": "Deploy-Log-Analytics",
+          "Description": "Deploy-Log-Analytics",
+          "PolicyDefinitionId": "/providers/Microsoft.Management/managementGroups/GBES/providers/Microsoft.Authorization/policyDefinitions/Deploy-Log-Analytics",
+          "Parameters": {
+            "workspaceName": {
+              "value": "GBES-la-0ca43f32-3747-4177-861f-1268aa90bdde"
+            },
+            "automationAccountName": {
+              "value": "GBES-a-0ca43f32-3747-4177-861f-1268aa90bdde"
+            },
+            "workspaceRegion": {
+              "value": "westus2"
+            },
+            "automationRegion": {
+              "value": "westus2"
+            },
+            "rgName": {
+              "value": "GBES-mgmt"
+            }
+          }
+        }
+      }
+    }
+  }
+}
